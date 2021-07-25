@@ -1,0 +1,152 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: monospace, Arial, sans-serif;
+  font-size: large;
+  font-weight: bold;
+
+}
+
+nav {
+  background-color: rgba(0, 0, 0, 0.842);
+  color: white;
+  display: grid;
+  grid-template-rows: 60px 40px;
+  row-gap: 50px;
+  padding: 0% 0%;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+nav .header {
+  text-align: center;
+  font-size: xx-large;
+  padding: 30px 0 15px 0;
+}
+nav .array-inputs {
+  display: grid;
+  grid-template-columns: 20% auto auto 40%;
+  padding: 0 0 15px 0;
+}
+
+nav .array-inputs #a_generate {
+  background-color: transparent;
+  border: none;
+  outline: none;
+  color: white;
+  padding: 0% 0% 0% 0%;
+  padding-left: 20%;
+}
+
+nav .array-inputs #a_generate:hover {
+  color: red;
+  cursor: pointer;
+}
+
+nav .array-inputs #a_size {
+  padding: 0% 0%;
+}
+
+nav .array-inputs #a_speed {
+  padding: 0% 0%;
+}
+
+nav .array-inputs .algos button{
+  padding: 0 2%;
+  border-radius: 5px;
+  border: none;
+  transition: all 0.5s;
+}
+
+nav .array-inputs .algos button:hover {
+  background-color: rgb(163, 159, 159);
+  cursor: pointer;
+}
+
+nav .array-inputs .algos .butt_locked {
+  background-color: transparent;
+  cursor: pointer;
+}
+
+nav .array-inputs .algos .butt_locked:hover {
+  background-color: transparent;
+  cursor: pointer;
+}
+
+nav .array-inputs .algos .butt_selected {
+  background-color: white;
+  color:red;
+}
+
+nav .array-inputs .algos .butt_selected:hover {
+  background-color: white;
+  cursor: pointer;
+}
+
+section {
+  display: grid;
+  grid-template-columns: 20% 60% 20%;
+}
+
+section #Info_Cont1 {
+  padding: 0%;
+  position: relative;
+}
+
+section #helpbutton{
+  bottom: 0;
+  position: absolute;
+  bottom: 50px;
+  left: 50px;
+}
+
+section #help{
+  display:inline-block;
+  padding:0.5em 1.2em;
+  border:0.1em solid #000000;
+  margin: 0.3em;
+  border-radius: 50%;
+  text-decoration:none;
+  font-family:'Roboto',sans-serif;
+  font-weight:300;
+  color: black;
+  text-align:center;
+  transition: all 0.5s;
+}
+
+section #help:hover{
+  color: white;
+  background-color: black;
+}
+
+section #array_container {
+  display: flex;
+  width: 100%;
+  height: 80vh;
+}
+
+section #Info_Cont2 {
+  padding: 0%;
+}
+
+.hide {
+  display: none;
+}
+
+/*
+@media (max-width: 480px)//Mobiles
+{
+    
+}
+
+@media (min-width: 481px) and (max-width: 1250px)//Tablets
+{
+
+}
+
+@media (min-width: 1251px)//Laptops and up
+{
+
+}
+*/
+/*# sourceMappingURL=style.css.map */
