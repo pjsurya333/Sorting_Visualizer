@@ -9,18 +9,18 @@ function Heap()
 
 function swap(i,j)
 {
-    div_update(divs[i],div_sizes[i],"red");//Color update
-    div_update(divs[j],div_sizes[j],"red");//Color update
+    div_update(divs[i],div_sizes[i],"red");
+    div_update(divs[j],div_sizes[j],"red");
 
     var temp=div_sizes[i];
     div_sizes[i]=div_sizes[j];
     div_sizes[j]=temp;
 
-    div_update(divs[i],div_sizes[i],"red");//Height update
-    div_update(divs[j],div_sizes[j],"red");//Height update
+    div_update(divs[i],div_sizes[i],"red");
+    div_update(divs[j],div_sizes[j],"red");
 
-    div_update(divs[i],div_sizes[i],"blue");//Color update
-    div_update(divs[j],div_sizes[j],"blue");//Color update
+    div_update(divs[i],div_sizes[i],"blue");
+    div_update(divs[j],div_sizes[j],"blue");
 }
 
 function max_heapify(n,i)
@@ -33,24 +33,24 @@ function max_heapify(n,i)
     {
         if(largest!=i)
         {
-            div_update(divs[largest],div_sizes[largest],"blue");//Color update
+            div_update(divs[largest],div_sizes[largest],"blue");
         }
 
         largest=l;
 
-        div_update(divs[largest],div_sizes[largest],"red");//Color update
+        div_update(divs[largest],div_sizes[largest],"red");
     }
 
     if(r<n && div_sizes[r]>div_sizes[largest])
     {
         if(largest!=i)
         {
-            div_update(divs[largest],div_sizes[largest],"blue");//Color update
+            div_update(divs[largest],div_sizes[largest],"blue");
         }
 
         largest=r;
 
-        div_update(divs[largest],div_sizes[largest],"red");//Color update
+        div_update(divs[largest],div_sizes[largest],"red");
     }
 
     if(largest!=i)
@@ -71,13 +71,13 @@ function heap_sort()
     for(var i=array_size-1;i>0;i--)
     {
         swap(0,i);
-        div_update(divs[i],div_sizes[i],"red");//Color update
-        div_update(divs[i],div_sizes[i],"yellow");//Color update
+        div_update(divs[i],div_sizes[i],"red");
+        div_update(divs[i],div_sizes[i],"yellow");
 
         max_heapify(i,0);
 
-        div_update(divs[i],div_sizes[i],"blue");//Color update
-        div_update(divs[i],div_sizes[i],"crimson");//Color update
+        div_update(divs[i],div_sizes[i],"blue");
+        div_update(divs[i],div_sizes[i],"crimson");
     }
-    div_update(divs[i],div_sizes[i],"crimson");//Color update
+    div_update(divs[i],div_sizes[i],"crimson");
 }

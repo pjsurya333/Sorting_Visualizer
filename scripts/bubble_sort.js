@@ -6,25 +6,24 @@ function Bubble()
     {
         for(var j=0;j<array_size-i-1;j++)
         {
-            div_update(divs[j],div_sizes[j],"yellow");//Color update
-
+            div_update(divs[j],div_sizes[j],"yellow");
             if(div_sizes[j]>div_sizes[j+1])
             {
-                div_update(divs[j],div_sizes[j], "red");//Color update
-                div_update(divs[j+1],div_sizes[j+1], "red");//Color update
+                div_update(divs[j],div_sizes[j], "red");
+                div_update(divs[j+1],div_sizes[j+1], "red");
 
                 var temp=div_sizes[j];
                 div_sizes[j]=div_sizes[j+1];
                 div_sizes[j+1]=temp;
 
-                div_update(divs[j],div_sizes[j], "red");//Height update
-                div_update(divs[j+1],div_sizes[j+1], "red");//Height update
+                div_update(divs[j],div_sizes[j], "red");
+                div_update(divs[j+1],div_sizes[j+1], "red");
             }
-            div_update(divs[j],div_sizes[j], "blue");//Color update
+            div_update(divs[j],div_sizes[j], "blue");
         }
-        div_update(divs[j],div_sizes[j], "crimson");//Color update
+        div_update(divs[j],div_sizes[j], "crimson");
     }
-    div_update(divs[0],div_sizes[0], "crimson");//Color update
+    div_update(divs[0],div_sizes[0], "crimson");
 
     enable_buttons();
 }
